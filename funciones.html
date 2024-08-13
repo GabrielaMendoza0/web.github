@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src= "funciones.js" ></script>
+
+</head>
+<body>
+    <h1>Trabajando con funciones</h1>
+    <script>
+        var opc
+        opc= parseInt (prompt("ELIJA QUE DESEA IMPRIMIR \n 1- Dias de la semana \n 2-Frase \n 3- Serie Ascentes \n 4- Serie Descendntes"));
+        while (opc <1 || opc>4)
+            {
+
+        opc= parseInt (prompt("ELIJA QUE DESEA IMPRIMIR \n 1- Dias de la semana \n 2-Frase \n 3- Serie Ascentes \n 4- Serie Descendntes"));
+             }
+
+
+        switch (opc) 
+        {
+            case 1:
+                {
+        document.write("LOS DIAS DE LA SEMANA");
+        document.write("<br>")
+             semanita ();
+                break;
+                }
+                
+            case 2:
+                {
+            document.write("FRASE");
+            document.write("<br>")
+             frase();
+              break;
+                }
+            case 3:
+            {
+            document.write("serie ascendentes");
+            document.write("<br>")
+             serie ();
+             break;
+            }
+            case 4: 
+            {
+        document.write("serie descendentes");
+        document.write("<br>")
+             serie1 ();
+             break;
+            }
+             default:
+                {
+                document.write("tabla")
+                document.write("<br>")
+                tablita ();
+                break;
+  
+                }
+            }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url(may\ desktop\ laptop\ wallpaper\ by\ sincerely_jehn.jpeg);
+    background-position: center;
+    height: 100vh;
+   
+    border-style: dotted;
+}
+nav{
+    height: 50px;
+    background-color: rgb(205, 212, 252);
+}
+nav .logo{
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(86, 14, 128);
+    font-size: 30px;
+    line-height: 50px;
+    padding-left: 20px;
+}
+nav ul{
+    float: right;
+    margin-right: 35px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-align: left;
+    color: rgb(44, 43, 43);
+    padding: 0 12px;
+    display:block;
+    line-height: 40px;
+    font-size: 12px;
+    background: rgb(194, 204, 138);
+    transition: .4s;
+}
+nav ul li a:hover,
+nav ul li a.activar{
+    color: rgb(85, 124, 175);
+}
+nav ul li:hover > ul{
+top: 50px;
+opacity: 1;
+visibility: visible;
+transition: .3s linear;
+}
+
+
+nav ul ul{
+position: absolute;
+top: 100px;
+border-top: 50px rgb(144, 150, 228) solid;
+opacity: 0;
+visibility: hidden;
+}
+nav ul ul li{
+    width: 500px;
+    display: list-item;
+    position: relative;
+    border: 20px rgb(37, 47, 107) solid;
+    border-top: none;
+}
+nav ul ul li a{
+    line-height: 50px;
+}
+nav ul ul ul{
+    border-top: none;
+}
+nav ul ul ul li{
+    position: relative;
+    top: -50px;
+    left: 120px;
+}
